@@ -27,7 +27,6 @@ El documento exhaustivo con todas las explicaciones y citas se encuentra en [**`
 Desarrollo_F_Taller_2/
 ├── README.MD          # Presentación y resumen ejecutivo del taller (este archivo)
 ├── taller-2.md        # Documento completo con el desarrollo de todos los puntos
-├── taller_2.txt       # Copia de respaldo en formato texto plano
 └── .gitattributes     # Configuración de normalización de saltos de línea (LF)
 ```
 
@@ -61,14 +60,14 @@ Explicación con sintaxis, reglas y ejemplos prácticos:
 sequenceDiagram
   autonumber
   participant U as Usuario
-  participant E as Evento (onClick / onChange)
-  participant S as Estado (useState)
-  participant C as Componente (JSX)
+  participant E as Evento onClick / onChange
+  participant S as Estado useState
+  participant C as Componente y JSX
   participant D as DOM Real
-  U->>E: Acción (clic, escritura)
-  E->>S: Llamada a setter (setEstado)
+  U->>E: Accion (clic o escritura)
+  E->>S: Llamada a setter setEstado
   S->>C: React solicita un nuevo render
-  C->>D: Conciliación: React actualiza únicamente lo que cambió
+  C->>D: Conciliacion - React actualiza solo lo que cambio
 ```
 
 ### 4. Importancia de React en la industria

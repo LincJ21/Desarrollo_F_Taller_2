@@ -358,7 +358,7 @@ sequenceDiagram
   U->>E: Clic o escritura
   E->>S: setHoras o setNombre
   S->>C: React vuelve a ejecutar el componente
-  C->>D: JSX nuevo; React aplica la diferencia
+  C->>D: JSX nuevo - React aplica la diferencia
 ```
 
 Props y estado no son lo mismo. Las props entran desde afuera y personalizan el componente. El estado nace dentro y cambia con el tiempo. Los eventos son el disparador. JSX es la forma de escribir el resultado. El componente es la función que une todo eso.
